@@ -1,29 +1,59 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --header-bg: #5f7b8f;
+  --header-text: #fff;
+  --link-color: #007acc;
+}
 body {
   font-family: sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-header {
-  background-color: #007acc;
-  color: white;
+.headerUP {
+  background-color: var(--header-bg);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.headerDOWN {
+  background-color: var(--header-bg);
+  color: var(--header-text);
   text-align: center;
   padding: 2rem;
+  position: relative;
 }
+
+header img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.header-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
 
 .about {
+  color: black;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  flex: 1;
   padding: 2rem;
   background-color: white;
-}
-
-.about img {
-  width: 150px;
-  border-radius: 50%;
-  margin-right: 2rem;
 }
 
 .columns {
@@ -42,26 +72,11 @@ a {
   color: #007acc;
   text-decoration: none;
 }
-:root {
-  --bg-color: #f9f9f9;
-  --text-color: #333;
-  --header-bg: #007acc;
-  --header-text: #fff;
-  --link-color: #007acc;
-}
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
 
-header {
-  background-color: var(--header-bg);
-  color: var(--header-text);
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-}
+
+
+
 
 #themeToggle {
   position: absolute;
@@ -84,35 +99,5 @@ header {
 }
 
 
-/* === Responsive ve Düzen için Container Sınıfı === */
 
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-}
 
