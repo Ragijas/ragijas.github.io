@@ -21,13 +21,7 @@ body {
   align-items: center;
   gap: 2rem;
 }
-.headerDOWN {
-  background-color: var(--header-bg);
-  color: var(--header-text);
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-}
+
 
 header img {
   max-width: 100px;
@@ -53,14 +47,14 @@ header img {
   text-align: left;
   flex: 1;
   padding: 2rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.800);
 }
 
 .columns {
   display: flex;
   justify-content: space-around;
   padding: 2rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.800);
   margin-top: 1rem;
 }
 
@@ -83,17 +77,21 @@ a {
   top: 20px;
   right: 20px;
   padding: 8px 12px;
-  background: white;
-  color: black;
+  background: rgb(37, 37, 37);
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
+body.dark-mode #themeToggle {
+  background-color: white;
+  color: rgb(37, 37, 37);
+}
 
 .dark-mode {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
-  --header-bg: #1e1e1e;
+  --bg-color: rgb(37, 37, 37);
+  --text-color: rgb(37, 37, 37);
+  --header-bg: rgb(37, 37, 37);
   --header-text: #fff;
   --link-color: #90caf9;
 }
