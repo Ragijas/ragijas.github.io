@@ -42,3 +42,43 @@ a {
   color: #007acc;
   text-decoration: none;
 }
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --header-bg: #007acc;
+  --header-text: #fff;
+  --link-color: #007acc;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+#themeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --header-bg: #1e1e1e;
+  --header-text: #fff;
+  --link-color: #90caf9;
+}

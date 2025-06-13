@@ -6,6 +6,16 @@
   <title>Anıl Soydan - CV</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  const toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggle.textContent = document.body.classList.contains('dark-mode')
+      ? '☀️ Aydınlık Mod'
+      : '🌙 Karanlık Mod';
+  });
+</script>
+
 <body>
   <header>
     <h1>Anıl Soydan</h1>
@@ -53,4 +63,9 @@
     </div>
   </section>
 </body>
+<header>
+  <h1>Anıl Soydan</h1>
+  <p>Yönetim Bilişim Sistemleri Mezunu</p>
+  <button id="themeToggle">🌙 Karanlık Mod</button>
+</header>
 </html>
