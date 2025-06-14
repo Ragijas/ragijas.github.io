@@ -1,15 +1,29 @@
+.nav-links {
+  display: none; /* Başlangıçta gizle */
+}
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
-  header {
+  .headerUP {
     flex-direction: column;
     text-align: center;
   }
 
-  header img {
+  .headerUP img {
     margin-bottom: 1rem;
   }
 
   .container {
     padding: 1rem;
+    position: relative;
   }
 
   h1 {
@@ -37,16 +51,4 @@
   }
 }
 
-.nav-links {
-  display: flex;
-  gap: 1rem;
-}
 
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
