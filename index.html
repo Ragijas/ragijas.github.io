@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anıl Soydan - CV</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -16,7 +16,14 @@
         <h1>Anıl Soydan</h1>
         <p>Software Developer</p>
     </div>
-      <button id="themeToggle">🌙 Karanlık Mod</button>
+    <nav class="nav-links">
+  <a href="#about">Hakkımda</a>
+  <a href="#projects">Projeler</a>
+  <a href="#experience">Deneyim</a>
+  <a href="#education">Eğitim</a>
+  <a href="#contact">İletişim</a>
+    </nav>
+      <button class="menu-toggle">&#9776;</button> <!-- Hamburger ikonu -->    
   </header>
 
   <section class="about">
@@ -57,8 +64,11 @@
     </div>
   </section>
 
-</body>
 
+</body>
+  <header>
+    <button id="themeToggle">🌙 Karanlık Mod</button>
+  </header>
 
 <script>
   const toggle = document.getElementById('themeToggle');
@@ -69,4 +79,13 @@
       : '🌙 Karanlık Mod';
   });
 </script>
+<script>
+  const toggleButton = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+
 </html>

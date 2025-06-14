@@ -1,0 +1,22 @@
+.about {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  flex: 1;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.800);
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.800);
+  margin-top: 1rem;
+}
+
+.column {
+  width: 45%;
+}
