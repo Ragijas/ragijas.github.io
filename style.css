@@ -13,5 +13,22 @@
 body{
     width: 100%;
     height: auto;
-    background-color: aquamarine;
+    background-color: #080808ea;
+    overflow-x: hidden;
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #722929;
 }
