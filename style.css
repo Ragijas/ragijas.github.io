@@ -13,7 +13,7 @@
 body{
     width: 100%;
     height: auto;
-    background-color: #000000;
+    background-color: #272525;
     overflow-x: hidden;
 }
 
@@ -22,15 +22,15 @@ body{
     width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #aa3333;
     transition: all 0.3s ease;
     border-radius: 12px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #8b2a2a;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #56818b;
+    background: #000000;
 }
 
 /* Navigation Bar */
@@ -49,14 +49,14 @@ nav{
 }
 
 .logo{
-    color: white;
+    color: rgb(221, 127, 65);
     font-size: 2rem;
     font-weight: bold;
 }
 
 .logo span{
-    color: #abb4b6;
-    text-shadow: 0 0 10px #a0b3b6;
+    color: #56818b;
+    text-shadow: 0 0 2px white;
 }
 .hamburg,
 .cancel{
@@ -138,14 +138,17 @@ section .main-container{
     padding-left: 100px;
 }
 .main-container .image{
+    position: relative;
     width: 500px;
-    height: 80vh;
+    height: 70VH;
     border-radius: 100%;
-    box-shadow: 0 0 50px #ffffff;
+    box-shadow: 0 0 50px #cccacab6;
     overflow: hidden;
+    display: flex;
+    cursor: pointer;
 }
 .main-container .image img{
-    
+
     width: 100%;
     
 }
@@ -167,15 +170,15 @@ section .main-container{
 
 .main-container .content{
    color: white;
-    width: 100%;
+    width: 40%;
 }
 .content h1{
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
 
 .content h1 span{
-    color: #722929;
-    text-shadow: 0 0 10px #a0b3b6;
+    color: #56818b;
+    text-shadow: 0 0 2px  white;
 }
 
 .content .typewriter{
@@ -184,8 +187,8 @@ section .main-container{
 }
 
 .content .typewriter-text{
-    color: #722929;
-    text-shadow: 0 0 10px #a0b3b6;
+    color: #56818b;
+    text-shadow: 0 0 2px  white;
 }
 
 .content p{
@@ -193,25 +196,25 @@ section .main-container{
     margin: 10px 0;
 }
 
-.social-links{
+.social-links i{
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 3rem;
     height: 3rem;
-    background-color: #56818b;
-    border: 0.2rem solid #722929;
+    background-color: transparent;
+    border: 0.2rem solid #56818b;
     border-radius: 50%;
-    color: #56818b;
+    color: white;
     margin: 5px 15px;
     font-size: 1.5rem;
     transition: 0.2s linear;
 }
 
-.social-links:hover{
+.social-links i:hover{
     scale: 1.3;
-    background-color: #722929;
-    color: white;
+    background-color: white;
+    color: black;
     filter: drop-shadow(0 0 10px #56818b);
 }
 
@@ -227,15 +230,16 @@ section .main-container{
     font-weight: 700;
     border-radius: 5px;
     transition: 0.2s linear;
+    cursor: pointer;
 }
 
 .content button:hover{
     scale: 1.1;
-    border: 2px solid #722929;
-    background-color: transparent;
+    border: 3px solid white;
+    background-color: black;
     color: white;
     font-weight: 700;
-    box-shadow: 0 0 40px #56818b;
+    box-shadow: 0 0 40px white;
 }
 
 /* About Section */
@@ -270,7 +274,7 @@ section .title span::after{
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #722929;
+    background: #56818b;
     left: 0;
     bottom: 0;
 }
@@ -318,7 +322,7 @@ section.button button{
     border-radius: 4px;
     font-size: 25px;
     font-weight: 400;
-    background: #722929;
+    background: #56818b;
     color: white;
     border: 2px solid transparent;
     cursor: pointer;
@@ -331,7 +335,7 @@ section.button button:hover{
 }
 /* skills Section */
 .skills{
-    background: black;
+    background: #272525;
 }
 .skills .content{
     padding: 40px 0;
@@ -376,17 +380,17 @@ section.button button:hover{
 }
 .skills-details .boxes .topic{
     font-size: 20px;
-    color: #722929;
+    color: white;
 }
 .skills-details .boxes .per{
     font-size: 60px;
-    color: #722929;
+    color: white;
 }
 
 /* contact Section */
 
 .contact{
-    background: black;
+    background: #272525;
 }
 .contact .content{
     margin: 0 auto;
@@ -394,6 +398,7 @@ section.button button:hover{
 }
 
 .contact .text{
+    color: white;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -401,7 +406,7 @@ section.button button:hover{
 
 /* footer Section */
 footer{
-    background: #722929;
+    background: white;
     padding: 15px 0;
     text-align: center;
     font-family: 'poppins', sans-serif;
@@ -409,11 +414,11 @@ footer{
 footer .text span{
     font-size: 17px;
     font-weight: 400;
-    color: white;
+    color: black;
 }
 footer .text span a{
     font-weight: 500;
-    color: #ffffff;
+    color: black;
 }
 footer .text span a:hover{
     text-decoration: underline;
