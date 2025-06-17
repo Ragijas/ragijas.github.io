@@ -13,7 +13,7 @@
 body{
     width: 100%;
     height: auto;
-    background-color: #5f5f5f;
+    background-color: #000000;
     overflow-x: hidden;
 }
 
@@ -381,4 +381,67 @@ section.button button:hover{
 .skills-details .boxes .per{
     font-size: 60px;
     color: #722929;
+}
+
+/* contact Section */
+
+.contact{
+    background: black;
+}
+.contact .content{
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.contact .text{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+footer{
+    background: #722929;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+footer .text span{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+footer .text span a{
+    font-weight: 500;
+    color: #ffffff;
+}
+footer .text span a:hover{
+    text-decoration: underline;
+}
+.scroll-button a{
+    position:  fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    background: #722929;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .about .about-details{
+        justify-self: center;
+        flex-direction: column;
+    }
+    .about .about-details .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-details .right{
+        width: 90%;
+        margin: 40px 0;
+    }
 }
