@@ -187,10 +187,10 @@ section .main-container{
         content: "Software Developer";
     }
     26%, 50%{
-        content: "Cloud Trainee";
+        content: "Jr. Cloud Engineer";
     }
     51%, 75%{
-        content: "Entrepreneur";
+        content: "Script Writer";
     }
     76%, 100%{
         content: "Social Media Manager";
@@ -415,23 +415,55 @@ section.button button:hover{
     font-weight: 500;
     margin: 0 6px;
 }
-.skills-details .boxes{
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+.skills-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
-.skills-details .box{
-    width: calc(100% /2 - 20px);
-    margin: 20px 0;
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
-.skills-details .boxes .topic{
-    font-size: 20px;
-    color: white;
+
+.skill-box {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 10px white;
+  transition: transform 0.3s ease;
+  color: white;
 }
-.skills-details .boxes .per{
-    font-size: 60px;
-    color: white;
+
+.skill-box:hover {
+  transform: translateY(-5px);
+}
+
+.skill-box h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #56818b;
+  border-bottom: 2px solid #56818b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-box ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #56818b;
+  font-size: 16px;
+}
+
+.skill-box ul li:last-child {
+  border-bottom: none;
 }
 
 /* contact Section */
