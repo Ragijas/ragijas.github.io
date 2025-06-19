@@ -17,9 +17,9 @@
             </div>
                 <div class="links">
                     <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="contact.html">Contact</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#contact">Contact</a></div>
                 </div>
                     <i class ="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
@@ -27,9 +27,9 @@
         <div class="dropdown">
             <div class="links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="skills.html">Skills</a>
-                <a href="contact.html">Contact</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
                 <i class ="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -105,11 +105,11 @@
     <div class="skill-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
       <h2>Core Skills</h2>
       <ul>
-        <li>HTML - 90%</li>
-        <li>CSS - 70%</li>
-        <li>JavaScript - 50%</li>
-        <li>C# - 90%</li>
-        <li>Unity - 80%</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C#</li>
+        <li>Unity</li>
       </ul>
     </div>
 
@@ -131,8 +131,8 @@
       <ul>
         <li>Visual Studio / VS Code</li>
         <li>Git & GitHub</li>
-        <li>Figma</li>
-        <li>Notion / Trello</li>
+        <li>Capcut</li>
+        <li>Bambu Studio</li>
         <li>Blender (Basic)</li>
       </ul>
     </div>
@@ -191,6 +191,11 @@
                     document.querySelector('.cancel').style.pointerEvents = 'none';
                     document.body.style.overflow = 'auto';
                     }
+                    document.querySelectorAll('.dropdown .links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                    cancel();
+                    });
+                    });
             </script>
             <script src="script.js"></script>
      

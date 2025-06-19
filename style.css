@@ -9,6 +9,9 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+html    {
+    scroll-behavior: smooth;
+}
 
 body{
     width: 100%;
@@ -86,7 +89,7 @@ nav{
     content: "";
     width: 0%;
     height: 3px;
-    background-color: #722929;
+    background-color: #56818b;
     bottom: -3px;
     left: 0;
     transition: 0.2 linear;
@@ -96,7 +99,7 @@ nav{
 }
 
 .nav-container .links a:hover{
-    color: #722929;
+    color: #56818b;
 }
 
 .dropdown{
@@ -123,7 +126,7 @@ nav{
 }
 
 .dropdown .links a:hover{
-    background-color: #722929;
+    background-color: #56818b;
 }
 
 section{
@@ -173,14 +176,14 @@ section .main-container{
 }
 
 .typewriter span::after{
-    content: "";
-    background-color: transparent;
-    
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    right: -8;
-    animation: cursor 0.5s infinite;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -0.15em;
+  width: 0.1em;
+  height: 1em;
+  background-color: white;
+  animation: cursorBlink 0.7s steps(1) infinite;
 }
 
 @keyframes words{
@@ -197,11 +200,9 @@ section .main-container{
         content: "Social Media Manager";
     }
 }
-@keyframes cursor{
-    to{
-        height: 100%;
-        border-left: 2px solid white;
-    }
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 @keyframes animate {
@@ -230,8 +231,11 @@ section .main-container{
 }
 
 .content .typewriter{
-    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
-    font-weight: 600;
+  font-size: clamp(1rem, 4vw, 2.5rem); /* Responsive */
+  font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .content .typewriter-text{
@@ -415,10 +419,8 @@ section.button button:hover{
 }
 .skills-details .experience .exp{
     color: white;
-    margin-left: 20px;
     font-size: 18px;
     font-weight: 500;
-    margin: 0 6px;
 }
 
 .skills-section {
