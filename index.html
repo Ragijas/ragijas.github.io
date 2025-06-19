@@ -170,25 +170,27 @@
 
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <script>
-                AOS.init({offset:0});
+                AOS.init({offset: 0,
+                duration: 1500,
+                once: true });
 
                     function hamburg() {
-        document.querySelector('.dropdown').style.transform = 'translateY(0)';
-        document.querySelector('.hamburg').style.opacity = '0';
-        document.querySelector('.hamburg').style.pointerEvents = 'none';
-        document.querySelector('.cancel').style.opacity = '1';
-        document.querySelector('.cancel').style.pointerEvents = 'auto';
-        document.body.style.overflow = 'hidden';
-    }
+                    document.querySelector('.dropdown').style.transform = 'translateY(0)';
+                    document.querySelector('.hamburg').style.opacity = '0';
+                    document.querySelector('.hamburg').style.pointerEvents = 'none';
+                    document.querySelector('.cancel').style.opacity = '1';
+                    document.querySelector('.cancel').style.pointerEvents = 'auto';
+                    document.body.style.overflow = 'hidden';
+                    }
 
-    function cancel() {
-        document.querySelector('.dropdown').style.transform = 'translateY(-500px)';
-        document.querySelector('.hamburg').style.opacity = '1';
-        document.querySelector('.hamburg').style.pointerEvents = 'auto';
-        document.querySelector('.cancel').style.opacity = '0';
-        document.querySelector('.cancel').style.pointerEvents = 'none';
-        document.body.style.overflow = 'auto';
-    }
+                function cancel() {
+                    document.querySelector('.dropdown').style.transform = 'translateY(-500px)';
+                    document.querySelector('.hamburg').style.opacity = '1';
+                    document.querySelector('.hamburg').style.pointerEvents = 'auto';
+                    document.querySelector('.cancel').style.opacity = '0';
+                    document.querySelector('.cancel').style.pointerEvents = 'none';
+                    document.body.style.overflow = 'auto';
+                    }
             </script>
             <script src="script.js"></script>
      
