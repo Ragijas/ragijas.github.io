@@ -72,7 +72,7 @@
                         <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">Professional Approach</div>
                         <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="500">I am a person who prioritizes reason over emotion and always thinks twice before taking action. Through experience, I have come to believe that collective success often leads to goals more efficiently than individual ambition. I value steady growth over the chaotic rush up the career ladder and prefer a calm, thoughtful approach to professional development. I believe in equality in all aspects of life, and I carry that same principle into my work.</p>                
                         <div class="btn" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600">
-                    <button>Download CV</button>
+                    <a href="cv.pdf"><button>Download CV</button></a>
                     </div>
                 </div>
         </div>
@@ -84,7 +84,7 @@
     <!-- Skills Section -->
     <section class="skills" id="skills">
     <div class="content">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Technical Skills & Tools</span></div>
+                    <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Skills & Tools</span></div>
         <div class="skills-details">
             <div class="text">
                 <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
@@ -92,10 +92,9 @@
                 </div>
                     <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Actively developing software and working on creative projects for over a year.</p>
                 <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                            <div class="num">6</div>
+                            
                         <div class="exp">
-                            Year of <br />
-                            Experience
+                            Over 10 Years of Theoratical Experience
                         </div>
                 </div>
             </div>
@@ -155,7 +154,7 @@
                     <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">What I’m Looking For</div>
                     <p>I'm seeking a career-starting role, preferably in data or C# technologies. One of my goals is to find a mentor who can guide me along the learning journey—not for every step, but when direction and insight are truly needed. While I ideally prefer remote work, I’m also open to relocating within Europe or Asia if the opportunity arises.</p>
                 <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-                    <button>Let's Chat</button>
+                    <a href="mailto:anilsoydan94@gmail.com"><button>Let's Chat</button></a>
                 </div>
             </div>
         </div>
@@ -172,6 +171,24 @@
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <script>
                 AOS.init({offset:0});
+
+                    function hamburg() {
+        document.querySelector('.dropdown').style.transform = 'translateY(0)';
+        document.querySelector('.hamburg').style.opacity = '0';
+        document.querySelector('.hamburg').style.pointerEvents = 'none';
+        document.querySelector('.cancel').style.opacity = '1';
+        document.querySelector('.cancel').style.pointerEvents = 'auto';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function cancel() {
+        document.querySelector('.dropdown').style.transform = 'translateY(-500px)';
+        document.querySelector('.hamburg').style.opacity = '1';
+        document.querySelector('.hamburg').style.pointerEvents = 'auto';
+        document.querySelector('.cancel').style.opacity = '0';
+        document.querySelector('.cancel').style.pointerEvents = 'none';
+        document.body.style.overflow = 'auto';
+    }
             </script>
             <script src="script.js"></script>
      

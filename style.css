@@ -1,5 +1,5 @@
 /* Google Font CDN link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -122,13 +122,14 @@ nav{
 
 }
 
-.dropdown.links a:hover{
+.dropdown .links a:hover{
     background-color: #722929;
 }
 
 section{
     width: 100%;
-    height: 110vh;
+    height: auto;
+    padding: 50px 0;
 }
 
 section .main-container{
@@ -139,8 +140,8 @@ section .main-container{
 }
 .main-container .image{
     position: relative;
-    width: 500px;
-    height: 70VH;
+    width: 50%;
+    height: 60%;
     border-radius: 100%;
     box-shadow: 0 0 50px #cccacab6;
     overflow: hidden;
@@ -266,18 +267,21 @@ section .main-container{
 }
 
 .content button{
-    width: 50%;
-    height: 6vh;
-    margin: 30px;
+    width: 100%;
+    max-width: 300px;
+    height: auto; 
+    padding: 12px 20px;
     background-color: #56818b;
     color: white;
     border: none;
-    outline: none;
-    font-size: 120%;
+    font-size: 1rem;  
     font-weight: 700;
     border-radius: 5px;
     transition: 0.2s linear;
     cursor: pointer;
+    white-space: nowrap;     
+    overflow: hidden;        
+    text-overflow: ellipsis; 
 }
 
 .content button:hover{
@@ -337,8 +341,9 @@ section .title span::after{
 }
 
 .about .left img{
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: 100%;
+    max-width: 350px;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -406,7 +411,7 @@ section.button button:hover{
 }
 .skills-details .experience .num{
     color: white;
-    font-size: 80px;
+    font-size: 20px;
 }
 .skills-details .experience .exp{
     color: white;
@@ -515,12 +520,14 @@ footer .text span a:hover{
     display: none;
 }
 
+
 /* responsive design */
 
 @media(max-width: 1200px){
     .about .about-details{
         justify-self: center;
         flex-direction: column;
+        align-items: center;
     }
     .about .about-details .left{
         display: flex;
@@ -531,6 +538,7 @@ footer .text span a:hover{
         width: 90%;
         margin: 40px 0;
     }
+    
 }
 
 @media(max-width: 992px){
@@ -561,9 +569,13 @@ footer .text span a:hover{
         opacity: 1;
         pointer-events: visible;
     }
+    .main-container{
+    flex-direction: column;
+    align-items: center;
+    }
     .main-container .content{
         margin-top: 20px;
-        width: 80%;
+        width: 90%;
     }
     .social-links i{
         width: 2.5rem;
@@ -572,8 +584,16 @@ footer .text span a:hover{
     }
     .main-container .image{
         z-index: -1;
-        width: 50%;
+        width: 90%;
         height: 60%;
+    }
+    .about-details .right {
+    width: 90%;
+    }
+    .about .about-details{
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
     }
     .skills .skills-details{
         align-items: center;
@@ -582,7 +602,7 @@ footer .text span a:hover{
     }
     .skills-details .text{
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .skills-details .boxes{
         justify-content: center;
@@ -596,8 +616,8 @@ footer .text span a:hover{
 }
 @media (max-width: 576px){
     .main-container .image{
-        width: 50%;
-        height: 60%;
+        width: 80%;
+        height: auto;
         margin-bottom: 0px;
     }
     .main-container .content{
@@ -609,5 +629,10 @@ footer .text span a:hover{
     .skills-details .boxes .per{
         font-size: 50px;
         color: #722929;
+    }
+      .content button {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    max-width: 90%;
     }
 }
