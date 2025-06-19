@@ -398,11 +398,19 @@ section.button button:hover{
 }
 .skills .skills-details{
     display: flex;
+    flex-wrap: wrap; /* eklendi */
     justify-content: space-between;
     align-items: center;
+    gap: 30px; /* kutuların daha sağlıklı boşlukla ayrılması için */
 }
 .skills-details .text{
-    width: 50%;
+        width: 100%;
+    max-width: 500px;
+    flex: 1;
+}
+.skills-container {
+    flex: 2;
+    min-width: 300px;
 }
 .skills-details p{
     color: white;
@@ -413,10 +421,7 @@ section.button button:hover{
     align-items: center;
     margin: 0 10px;
 }
-.skills-details .experience .num{
-    color: white;
-    font-size: 20px;
-}
+
 .skills-details .experience .exp{
     color: white;
     font-size: 18px;
@@ -433,19 +438,26 @@ section.button button:hover{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px 0;
 }
 
 .skill-box {
-  background-color: transparent;
+
   border-radius: 12px;
   padding: 25px 30px;
-  box-shadow: 0 4px 10px white;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08); /* beyaz ama yumuşak bir gölge */
+  transition: transform 0.3s ease, background-color 0.3s ease;
   color: white;
+  backdrop-filter: blur(6px); /* cam efekti */
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* hizalamayı gözle görmek için */
 }
 
 .skill-box:hover {
   transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .skill-box h2 {
@@ -598,21 +610,25 @@ footer .text span a:hover{
         align-items: center;
     }
     .skills .skills-details{
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-    }
-    .skills-details .text{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .skills-details .boxes{
-        justify-content: center;
         align-items: center;
-        width: 100%;
+        text-align: center;
     }
-    .contact .text{
+    .skills-details .text,
+    .skills-container {
         width: 100%;
+        padding: 10px 20px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .skills-container .skill-box {
+        width: 90%;
     }
 
 }
