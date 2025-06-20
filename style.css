@@ -200,6 +200,46 @@ section .main-container{
         content: "Social Media Manager";
     }
 }
+.typewritertr{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typewritertr span{
+    position: relative;
+    text-shadow: 0 0 2px white
+}
+.typewritertr span::before{
+    content: "Software Developer";   
+    color: #56818b;
+    animation: wordstr 10s infinite;
+}
+
+.typewritertr span::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -0.15em;
+  width: 0.1em;
+  height: 1em;
+  background-color: white;
+  animation: cursorBlink 0.7s steps(1) infinite;
+}
+@keyframes wordstr{
+    0%, 25%{
+        content: "Yazılım Geliştirici'yim";
+    }
+    26%, 50%{
+        content: "Jr. Bulut Geliştirici'yim";
+    }
+    51%, 75%{
+        content: "Script Geliştirici'yım";
+    }
+    76%, 100%{
+        content: "Sosyal Medya Yöneticisi'yim";
+    }
+}
 @keyframes cursorBlink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
